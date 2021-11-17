@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZone</title>
+    <link rel="stylesheet" type="text/css" href="css/order.css">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .bg-img{
+    background-image:url(https://i2.wp.com/dailyhodl.com/wp-content/uploads/2020/03/cybersecurity.png?fit=1397%2C839&ssl=1);
+    height: 700px;;
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.container{
+    position: absolute;
+    margin: 20px;
+    }
+
+.topnav{
+    overflow: hidden
+}
+.topnav a{
+    float:right;
+    text-align: center;
+    padding: 8px 16px;
+    font-size: 18px;
+    color: ivory;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color:black ;
+}
+.topnav a.active{
+    background-color:rgb(124, 153, 218);
+}
+.centre{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+   .centre h1{font-size: 60px;}
+   .centre h4{font-size: 30px;}
+
+   @font-face {
+  font-family: Clip;
+  src: url("https://acupoftee.github.io/fonts/Clip.ttf");
+}
+
+
+
+.sign {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  background-image: radial-gradient(
+    ellipse 50% 35% at 50% 50%,
+    #6b1839,
+    transparent
+  );
+  transform: translate(-50%, -50%);
+  letter-spacing: 2;
+  left: 50%;
+  top: 50%;
+  font-family: "Clip";
+  text-transform: uppercase;
+  font-size: 6em;
+  color: #ffe6ff;
+  text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+    0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  animation: shine 2s forwards, flicker 3s infinite;
+}
+
+@keyframes blink {
+  0%,
+  22%,
+  36%,
+  75% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+  28%,
+  33% {
+    color: #ff65bd;
+    text-shadow: none;
+  }
+  82%,
+  97% {
+    color: #ff2483;
+    text-shadow: none;
+  }
+}
+
+.flicker {
+  animation: shine 2s forwards, blink 3s 2s infinite;
+}
+
+.fast-flicker {
+  animation: shine 2s forwards, blink 10s 1s infinite;
+}
+
+@keyframes shine {
+  0% {
+    color: #6b1839;
+    text-shadow: none;
+  }
+  100% {
+    color: #ffe6ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
+      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
+      0 -0.5rem 2rem #ff2483, 0 0.5rem 3rem #ff2483;
+  }
+}
+
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: 0.9;
+  }
+
+  6% {
+    opacity: 0.85;
+  }
+
+  8% {
+    opacity: 0.95;
+  }
+
+  10% {
+    opacity: 0.9;
+  }
+
+  11% {
+    opacity: 0.922;
+  }
+
+  12% {
+    opacity: 0.9;
+  }
+
+  14% {
+    opacity: 0.95;
+  }
+
+  16% {
+    opacity: 0.98;
+  }
+
+  17% {
+    opacity: 0.9;
+  }
+
+  19% {
+    opacity: 0.93;
+  }
+
+  20% {
+    opacity: 0.99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: 0.94;
+  }
+
+  28% {
+    opacity: 0.98;
+  }
+
+  37% {
+    opacity: 0.93;
+  }
+
+  38% {
+    opacity: 0.5;
+  }
+
+  39% {
+    opacity: 0.96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: 0.97;
+  }
+
+  46% {
+    opacity: 0.94;
+  }
+
+  56% {
+    opacity: 0.9;
+  }
+
+  58% {
+    opacity: 0.9;
+  }
+
+  60% {
+    opacity: 0.99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  72% {
+    opacity: 0.95;
+  }
+
+  93% {
+    opacity: 0.93;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  97% {
+    opacity: 0.93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.footer{
+    text-align: center;
+    background-image: url(http://cvitanic.info/wp-content/uploads/2016/05/Footer-background.jpg);
+    color: white;
+}
+.footer a{
+    font-size: 28px;
+    color:rgb(246, 3, 3);
+    padding:18px
+}
+ @media screen and (max-width: 600px){
+    .topnav a{
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+   <div class="bg-img">
+     <div class="container">
+      <div class="topnav">
+          <a href="login.html">Login</a>
+          <a href="signup.html">Signup</a>
+          <a href="contact.html">Contact</a>
+          <a class="active" href="home.html">Home</a>
+      </div>
+        </div>
+       <div class="centre">
+           <h4>Saif Ali's Cyber Security.</h4>
+    </div>
+    <div class="sign">
+        <span class="fast-flicker">Saif Ali's""</span>Cyber<span class="flicker">Secu</span>rity
+      </div>
+   </div>
+
+   <div class="footer">
+       <h2>Wanna Contact with us</h2>
+    <a href="https://www.instagram.com/saif_ali6/"><i class="fa fa-instagram"></i></a>
+    <a href="https://twitter.com/SaifAli45244560"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.facebook.com/profile.php?id=100009532210681"><i class="fa fa-facebook"></i></a>
+    <a href="https://en.wikipedia.org/wiki/Computer_security"><i class="fa fa-wikipedia-w"></i></a>
+   </div>
+</body>
+</html>

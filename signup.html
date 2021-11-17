@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodZone</title>
+    <link rel="stylesheet" type="text/css" href="css/sign.css">  
+    <style>
+        *{box-sizing: border-box;}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://thumbs.dreamstime.com/z/businessman-holding-shield-protect-icon-concept-cyber-security-safe-your-data-businessman-holding-shield-protect-icon-concept-107740189.jpg); 
+}
+   
+input[type=text]{
+    width: 100%;
+    padding: 12px;
+    display: flex;
+    border: none;
+    background:rgb(186, 198, 250);
+}
+hr{
+    border: 1px solid;
+    margin-bottom: 25px;
+}
+button{
+    background-color:rgba(0, 128, 0, 0.335);
+    color: white;
+    margin: 8px 2px;
+    padding: 14px 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border:none;
+    width:30%;
+    opacity: 0.9;
+}
+.cancelbtn{
+    background-color: rgba(255, 0, 0, 0.39);
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+button:hover{
+ opacity: 1.2;
+}
+.log{
+    display: table;
+    padding:40px;
+    
+}
+    </style>
+</head>
+<body>
+    <form action="serverUrl">     
+    <div class="log">
+
+        <h1>Wanna Sign Up</h1>
+        <h3>Sign up here so that you can login us anytime anywher</h3>
+
+        <hr>
+        <label for="Phone No."><b>What's your mobile number</b></label>
+       <input type="text" placeholder="Enter Phone No." name="Phone No." required>
+
+       <label for="email"><b>What's your Username</b></label>
+       <input type="text" placeholder="Enter Username" name="email" required>
+
+       <label for="passward"><b>You want to set your password</b></label>
+       <input type="text" placeholder="Enter passward" name="passward" required>
+
+       <label for="verify passward"><b>Now verify your Password </b></label>
+       <input type="text" placeholder="verify passward" name="Repeat passward" required>
+
+
+       <div class="btn">
+            <button type="button" class="cancelbtn">
+                <a href="home.html">Cancel</a>
+            </button>
+            <button type="button" class="signupbtn">SignUp</button>
+       </div>
+    </div>
+ </form>
+</body>
+</html>
